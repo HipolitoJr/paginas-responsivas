@@ -1,0 +1,22 @@
+marcelo{
+    height: 100px;
+    width: 100px;
+    display: block;
+    background-color: red;
+    position :relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+
+}
+
+marcelo:after{
+    content: 'Marcelo é Malves';
+}
+
+@-webkit-keyframes mymove {
+    0% {left: 0px; top:0px; -webkit-transform: rotateY(0deg); }
+
+    10% {left: 500px; top:500px; -webkit-transform: rotateY(180deg);}
+
+    100% {left: 200px; top: 200px; -webkit-transform: rotateY(360deg);}
+}
